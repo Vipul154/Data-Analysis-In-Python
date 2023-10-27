@@ -1,0 +1,90 @@
+@import "./constants";
+@import "./variables";
+
+.app_analytic3 {
+  width: 100%;
+  //border: 5px green solid;
+  height: 70rem;
+  background: #cbb2d2;
+  padding: 20% $md-gap 10% $md-gap;
+
+  .analytics__container {
+    //border: 5px yellow solid;
+    @include flexAlign;
+
+    .left__analytics {
+      //border: 5px red solid;
+      @include flexDirection;
+      gap: $lg-gap;
+      flex: 1;
+
+      .left__text {
+        @include flexDirection;
+        gap: $lg-gap;
+
+        h1 {
+          font-size: 3rem;
+          color: $primary-color;
+        }
+
+        p {
+          color: black;
+          font-size: 1.4rem;
+        }
+      }
+
+      .left__analytics__container {
+        @include flexAlign;
+        gap: $lg-gap;
+
+        .analytic__container {
+          @include flexAlign;
+          flex-direction: column;
+          gap: $lg-gap;
+          cursor: pointer;
+          color: $primary-color;
+          font-weight: bold;
+
+          .analytics__icon {
+            height: 180px;
+            width: 180px;
+            border-radius: 20px;
+            background: $neutral;
+            font-size: 2rem;
+            transition: $trans;
+            @include flexCenter;
+
+            &:hover {
+              background: $secondary-color;
+              box-shadow: $shadow;
+              @include textGradient;
+
+            }
+          }
+        }
+      }
+    }
+    .right__analytics {
+      //border: 5px brown solid;
+      .graph02img {
+        background-color: mintcream;
+        box-shadow: $shadow;
+
+        border-radius: 40px;
+        height: 90%;
+        width: 100%;
+        overflow: hidden;
+        .space{
+          padding: 15px;
+
+        }
+
+      }
+      flex: 1;
+
+      display: flex;
+      justify-content: flex-end;
+
+    }
+  }
+}

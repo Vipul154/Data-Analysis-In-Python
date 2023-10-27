@@ -1,0 +1,30 @@
+@import "./constants";
+@import "./variables";
+
+.app__home {
+  height: 120vh;
+  width: 100%;
+  background: #59253A;
+  padding: $ex-gap $md-gap;
+  @include flexDirection;
+  gap: 3em;
+
+  .home__text {
+    text-align: center;
+
+    h1 {
+      @include textGradient;
+      font-size: 10rem;
+      margin-bottom: 3rem;
+      font-family: Birthstone;
+    }
+    h4 {
+      color: white;
+      font-size: 23px;
+      margin-bottom: 1rem;
+      font-family: "Adobe Caslon Pro";
+      font-weight: normal;
+
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.container_for_01 {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    /*flex-shrink: 0;*/
+    /*flex-grow: 1;*/
+    border: 2px solid firebrick;
+}
+
+.container_for_01 > * {
+    /*flex: 1;*/
+    flex-basis: 100%;
+}
+.content {
+    margin-top: 50px;
+    border: 1px solid pink;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+.content p {
+    margin-top: 40px;
+    width: 350px;
+
+}
+.image {
+    border: 1px solid green;
+    height: 550px;
+
+}

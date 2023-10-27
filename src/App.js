@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './app.scss';
+import {STTop, Home, Navbar, DashboardPreview, Analytics, Feature, Distribution, Footer} from "./Components/index";
+import {Graph_01, Graph_02, Graph_03, Graph_04, Graph_05, Graph01_content, MainContent} from '../src/Components/graphs/index.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Graph02Section from "./Components/Graph02Section";
+import Graph03Section from "./Components/Graph03Section";
+import Graph04Section from "./Components/Graph04Section";
+import Graph05Section from "./Components/Graph05Section";
+const App = () => {
+    return (
+        <div className="app">
+            <Navbar/>
+            <Home/>
+            <DashboardPreview/>
+            <Analytics/>
+            <Graph02Section/>
+            <Graph03Section/>
+            <Graph04Section/>
+            <Graph05Section/>
+            {/*<Distribution/>*/}
+            {/*<Footer/>*/}
+            {/*<STTop/>*/}
+
+        </div>
+    );
 }
-
-export default App;
+export default  App;
